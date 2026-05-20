@@ -1,30 +1,31 @@
-# T-Dash GitHub Pages 站点
+# T-Dash Web
 
-这个目录是 T-Dash 的静态介绍网站，可以直接用于 GitHub Pages。
+这是 T-Dash 的公开宣传网站仓库，用于 GitHub Pages 部署。App 主项目保持私有；这个仓库只包含展示页面、截图、演示视频、下载入口和隐私政策。
 
 ## 本地预览
 
-直接打开 `docs/index.html` 即可预览。也可以在仓库根目录运行：
+在仓库根目录运行：
 
 ```bash
-python3 -m http.server 8080 -d docs
+python3 -m http.server 8080
 ```
 
 然后访问 `http://localhost:8080`。
 
 ## GitHub Pages 部署
 
-1. 把 `docs/` 提交并推送到 GitHub。
-2. 打开仓库的 `Settings`。
-3. 进入 `Pages`。
-4. `Build and deployment` 选择 `Deploy from a branch`。
-5. `Branch` 选择 `main`，目录选择 `/docs`。
-6. 保存后等待 GitHub Pages 构建完成。
+1. 推送当前仓库到 GitHub。
+2. 打开仓库 `Settings -> Pages`。
+3. `Build and deployment` 选择 `Deploy from a branch`。
+4. `Branch` 选择 `main`，目录选择 `/root`。
+5. 保存后等待 GitHub Pages 构建完成。
 
-下载按钮现在指向仓库的最新 Release：
+## 下载发布
+
+首页下载按钮指向当前公开展示仓库的最新 Release：
 
 ```text
-https://github.com/smalleastWang/tesla_dash/releases/latest
+https://github.com/smalleastWang/tesla-dash-web/releases/latest
 ```
 
-以后发布 APK、IPA 或安装说明时，只需要在 GitHub Releases 里上传资源，页面链接不用改。
+以后发布 App 安装包时，在这个仓库的 GitHub Releases 上传 APK、IPA 或安装说明即可。

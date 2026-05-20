@@ -1,37 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Privacy Policy</title>
-</head>
-<body style="max-width: 800px; margin: auto; font-family: sans-serif;">
-  <h1>Privacy Policy</h1>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071018" />
+    <title>T-Dash 隐私政策</title>
+    <link rel="icon" href="./assets/launcher_icon.png" />
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "PingFang SC", "Microsoft YaHei", sans-serif;
+        background: #071018;
+        color: #f4f8fb;
+      }
 
-  <p>
-    This application provides dashboard, navigation and vehicle control
-    features for Tesla vehicles.
-  </p>
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 16% 0%, rgba(107, 231, 255, 0.16), transparent 32rem),
+          linear-gradient(180deg, #071018, #05090e);
+      }
 
-  <h2>Data Collection</h2>
-  <p>
-    The app may use Bluetooth, location services and network access
-    to provide vehicle connectivity and navigation functionality.
-  </p>
+      main {
+        width: min(820px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 64px 0;
+      }
 
-  <h2>Personal Data</h2>
-  <p>
-    We do not sell user personal data to third parties.
-  </p>
+      a {
+        color: #6be7ff;
+        text-decoration: none;
+      }
 
-  <h2>Permissions</h2>
-  <p>
-    Bluetooth and location permissions are required for BLE vehicle
-    connection and navigation features.
-  </p>
+      .back {
+        display: inline-flex;
+        margin-bottom: 34px;
+        color: #9fb2c2;
+      }
 
-  <h2>Contact</h2>
-  <p>
-    Contact: smalleast666@gmail.com
-  </p>
-</body>
+      article {
+        padding: 34px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 28px;
+        background: rgba(11, 22, 32, 0.76);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(34px, 6vw, 58px);
+        line-height: 1.05;
+      }
+
+      h2 {
+        margin: 34px 0 10px;
+      }
+
+      p,
+      li {
+        color: #9fb2c2;
+        line-height: 1.8;
+      }
+
+      .updated {
+        color: #62f2bd;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./index.html">返回首页</a>
+      <article>
+        <p class="updated">更新日期：2026 年 5 月 20 日</p>
+        <h1>T-Dash 隐私政策</h1>
+        <p>
+          T-Dash 是为 Tesla 车辆用户提供仪表盘、车辆连接与行程记录体验的 App。我们重视你的隐私，并尽量只请求实现功能所必需的权限。
+        </p>
+
+        <h2>数据与权限</h2>
+        <p>
+          App 可能会使用蓝牙、定位和网络访问能力，用于扫描并连接车辆、读取车辆相关状态、完成必要的连接流程。部分系统会要求蓝牙扫描同时申请定位权限。
+        </p>
+
+        <h2>个人信息</h2>
+        <p>
+          我们不会出售用户个人数据。车辆连接、行程或设置相关数据仅用于 App 功能本身，具体存储方式会随版本能力调整，并以应用内实际说明为准。
+        </p>
+
+        <h2>第三方服务</h2>
+        <p>
+          如果未来版本接入崩溃分析、地图、下载分发或其他第三方服务，我们会在应用说明或本页面中补充相关信息。
+        </p>
+
+        <h2>联系我们</h2>
+        <p>
+          如对隐私政策有疑问，请联系：
+          <a href="mailto:smalleast666@gmail.com">smalleast666@gmail.com</a>
+        </p>
+      </article>
+    </main>
+  </body>
 </html>

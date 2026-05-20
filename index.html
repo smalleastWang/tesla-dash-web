@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="T-Dash 是一款为 Tesla 用户打造的车载仪表盘 App，提供实时仪表、行程记录与 BLE 车辆连接体验。"
+      content="T-Dash 是为 Tesla 车主打造的车载仪表盘 App，提供实时仪表、BLE 车辆连接、行程记录与沉浸式横屏驾驶数据体验。"
     />
     <meta name="theme-color" content="#071018" />
+    <meta property="og:title" content="T-Dash | Tesla 车载仪表盘 App" />
+    <meta property="og:description" content="实时速度、功率、电量、续航与行程记录，专为 Tesla 车主设计。" />
+    <meta property="og:image" content="./assets/仪表页面.jpg" />
     <title>T-Dash | Tesla 车载仪表盘 App</title>
     <link rel="icon" href="./assets/launcher_icon.png" />
     <link rel="apple-touch-icon" href="./assets/launcher_icon.png" />
@@ -21,175 +24,137 @@
       </a>
 
       <nav class="nav-links" aria-label="主导航">
+        <a href="#demo">演示</a>
         <a href="#features">亮点</a>
-        <a href="#screens">界面</a>
         <a href="#download">下载</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero section-band">
+      <section class="hero">
+        <div class="hero-media reveal" aria-label="T-Dash 横屏仪表截图">
+          <img src="./assets/仪表页面.jpg" alt="T-Dash 横屏仪表页面" />
+          <div class="hero-glass">
+            <img src="./assets/splash_logo.png" alt="" />
+            <span>Live BLE dashboard</span>
+          </div>
+        </div>
+
         <div class="hero-copy reveal">
-          <p class="eyebrow">Tesla vehicle companion dashboard</p>
+          <p class="eyebrow">Tesla companion dashboard</p>
           <h1>T-Dash</h1>
           <p class="hero-text">
-            为 Tesla 用户打造的车载仪表盘 App。实时速度、功率、车辆状态与行程记录，用更沉浸的方式呈现驾驶数据。
+            把 Tesla 的实时驾驶数据放到一个更专注、更适合车内扫读的仪表盘里。速度、功率、电量、续航、行程和连接状态，一眼就够。
           </p>
 
           <div class="hero-actions">
-            <a class="button primary" href="#download">立即下载</a>
-            <a
-              class="button secondary"
-              href="https://github.com/smalleastWang/tesla_dash"
-              target="_blank"
-              rel="noreferrer"
-            >
-              查看源码
-            </a>
+            <a class="button primary" href="#download">下载 App</a>
+            <a class="button secondary" href="#demo">观看演示</a>
           </div>
 
           <dl class="quick-stats" aria-label="应用特性">
             <div>
               <dt>BLE</dt>
-              <dd>车辆直连</dd>
+              <dd>车辆近场连接</dd>
             </div>
             <div>
-              <dt>实时</dt>
-              <dd>仪表数据</dd>
+              <dt>Live</dt>
+              <dd>实时驾驶数据</dd>
             </div>
             <div>
-              <dt>跨端</dt>
-              <dd>Flutter 构建</dd>
+              <dt>Trip</dt>
+              <dd>行程与里程记录</dd>
             </div>
           </dl>
         </div>
+      </section>
 
-        <div class="phone-stage reveal" aria-label="T-Dash 应用界面预览">
-          <div class="phone">
-            <div class="phone-speaker"></div>
-            <div class="app-screen">
-              <div class="screen-top">
-                <span>20:26</span>
-                <span>BLE Connected</span>
-              </div>
-              <div class="speed-card">
-                <div class="gauge">
-                  <span class="tick t1"></span>
-                  <span class="tick t2"></span>
-                  <span class="tick t3"></span>
-                  <span class="needle"></span>
-                  <strong>86</strong>
-                  <em>km/h</em>
-                </div>
-              </div>
-              <div class="vehicle-row">
-                <span>Power</span>
-                <strong>112 kW</strong>
-              </div>
-              <div class="vehicle-row">
-                <span>Battery</span>
-                <strong>74%</strong>
-              </div>
-              <div class="mini-grid">
-                <span>Trip 18.6 km</span>
-                <span>Range 328 km</span>
-              </div>
-            </div>
-          </div>
-          <div class="halo-card">
-            <img src="./assets/splash_logo.png" alt="T-Dash 标志" />
-          </div>
+      <section id="demo" class="demo-section section-wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow">App preview</p>
+          <h2>真实界面，真实驾驶信息。</h2>
+          <p>
+            T-Dash 聚焦驾驶时真正需要快速识别的数据。横屏仪表适合车内固定使用，竖屏页面则用于连接、查看行程和管理记录。
+          </p>
+        </div>
+
+        <div class="video-frame reveal">
+          <video controls playsinline preload="metadata" poster="./assets/仪表页面.jpg">
+            <source src="./assets/tdash-demo.mp4" type="video/mp4" />
+            你的浏览器暂不支持视频播放。
+          </video>
         </div>
       </section>
 
-      <section id="features" class="features">
-        <div class="section-heading reveal">
+      <section id="features" class="features section-wrap">
+        <div class="feature-copy reveal">
           <p class="eyebrow">Why T-Dash</p>
-          <h2>把驾驶数据变成清晰、漂亮、可快速扫读的仪表体验。</h2>
+          <h2>为 Tesla 车主做的轻量车载数据中心。</h2>
         </div>
 
         <div class="feature-grid">
           <article class="feature-card reveal">
             <span class="feature-icon">01</span>
             <h3>横屏沉浸仪表</h3>
-            <p>适合车内使用的大屏仪表布局，速度、功率与车辆信息层级清晰。</p>
+            <p>大字号速度、功率和车辆状态，适合固定在车内时快速扫读。</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon">02</span>
             <h3>BLE 车辆连接</h3>
-            <p>通过蓝牙与车辆数据通道交互，聚焦低延迟、稳定和可感知的连接状态。</p>
+            <p>围绕蓝牙连接状态做清晰反馈，让连接、授权和恢复过程更可感知。</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon">03</span>
             <h3>行程记录</h3>
-            <p>记录驾驶里程与行程数据，帮助你回看每一次出发和抵达。</p>
+            <p>记录行驶里程与行程数据，日常通勤、自驾和测试都能回看。</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon">04</span>
-            <h3>暗色车机风格</h3>
-            <p>为夜间和车内场景优化的视觉语言，减少干扰，同时保留足够的科技感。</p>
+            <h3>车内暗色风格</h3>
+            <p>降低夜间干扰，保留足够对比度，让数据比装饰更重要。</p>
           </article>
         </div>
       </section>
 
-      <section id="screens" class="showcase section-band">
-        <div class="showcase-copy reveal">
-          <p class="eyebrow">Interface</p>
-          <h2>为车内 glance 体验设计。</h2>
-          <p>
-            T-Dash 的界面重点不是堆满信息，而是在合适的位置展示最重要的数据：速度、功率、电量、续航、行程和连接状态。
-          </p>
+      <section class="screens section-wrap">
+        <div class="landscape-shot reveal">
+          <img src="./assets/仪表页面.jpg" alt="T-Dash 仪表页面截图" />
         </div>
-
-        <div class="dashboard-preview reveal">
-          <div class="preview-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="dashboard-layout">
-            <aside>
-              <small>Vehicle</small>
-              <strong>Model 3</strong>
-              <span>Ready</span>
-            </aside>
-            <div class="wide-gauge">
-              <span class="wide-needle"></span>
-              <strong>104</strong>
-              <em>km/h</em>
-            </div>
-            <aside>
-              <small>Drive</small>
-              <strong>156 kW</strong>
-              <span>Sport</span>
-            </aside>
-          </div>
+        <div class="portrait-shot reveal">
+          <img src="./assets/里程页面.jpg" alt="T-Dash 里程页面截图" />
+        </div>
+        <div class="screens-copy reveal">
+          <p class="eyebrow">Screens</p>
+          <h2>横屏看仪表，竖屏看行程。</h2>
+          <p>
+            一个 App 覆盖驾驶中和驾驶后的两个场景：正在路上时看实时仪表，停车后回看里程和行程数据。
+          </p>
         </div>
       </section>
 
-      <section id="download" class="download">
+      <section id="download" class="download section-wrap">
         <div class="download-panel reveal">
           <div>
             <p class="eyebrow">Download</p>
-            <h2>下载 T-Dash</h2>
+            <h2>下载 T-Dash 最新版</h2>
             <p>
-              推荐把安装包发布到 GitHub Releases。页面会自动把用户引导到最新版本，适合 GitHub Pages 长期托管。
+              安装包通过公开展示仓库的 GitHub Releases 分发。App 源码保持私有，网页只负责展示、下载和隐私说明。
             </p>
           </div>
 
           <div class="download-actions">
             <a
               class="store-button"
-              href="https://github.com/smalleastWang/tesla_dash/releases/latest"
+              href="https://github.com/smalleastWang/tesla-dash-web/releases/latest"
               target="_blank"
               rel="noreferrer"
             >
-              <span>下载最新版</span>
-              <strong>GitHub Releases</strong>
+              <span>安装包下载</span>
+              <strong>Latest Release</strong>
             </a>
-            <a class="store-button muted" href="https://github.com/smalleastWang/tesla_dash" target="_blank" rel="noreferrer">
-              <span>获取项目</span>
-              <strong>Source Code</strong>
+            <a class="store-button muted" href="./privacy.html">
+              <span>查看说明</span>
+              <strong>Privacy Policy</strong>
             </a>
           </div>
         </div>
@@ -198,9 +163,12 @@
 
     <footer class="site-footer">
       <span>© 2026 T-Dash</span>
-      <a href="https://github.com/smalleastWang/tesla_dash" target="_blank" rel="noreferrer">
-        GitHub
-      </a>
+      <div>
+        <a href="./privacy.html">隐私政策</a>
+        <a href="https://github.com/smalleastWang/tesla-dash-web/releases/latest" target="_blank" rel="noreferrer">
+          下载
+        </a>
+      </div>
     </footer>
 
     <script src="./script.js"></script>
