@@ -1,6 +1,6 @@
 # Tesync Web
 
-这是 **Tesync** 的公开宣传落地页，视觉与结构参考 [tdash.cn](https://tdash.cn/)，内容基于 App 项目文档整理。用于 GitHub Pages 部署；App 源码保持私有，本仓库仅含展示页、截图、演示视频、下载入口与隐私政策。
+这是 **Tesync** 的公开宣传落地页，内容基于 App 项目文档整理。用于 GitHub Pages 部署；App 源码保持私有，本仓库仅含展示页、截图、演示视频、下载入口与隐私政策。
 
 ## 本地预览
 

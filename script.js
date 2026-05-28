@@ -200,8 +200,8 @@ function renderQrCodes() {
 
   const targets = getDownloadTargets();
   const pairs = [
-    ["qr-app-store", targets.appStore, "link-app-store"],
-    ["qr-google-play", targets.googlePlay, "link-google-play"],
+    // ["qr-app-store", targets.appStore, "link-app-store"],
+    // ["qr-google-play", targets.googlePlay, "link-google-play"],
     ["qr-apk", targets.apk, "link-apk"],
   ];
 
